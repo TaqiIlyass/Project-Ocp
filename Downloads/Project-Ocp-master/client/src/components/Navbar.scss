@@ -1,0 +1,45 @@
+/* Navbar.css */
+
+nav {
+    background-color: rgba(27, 27, 27, 0.699);
+    padding: 10px;
+    display: flex; /* Permet d'aligner les éléments horizontalement */
+    justify-content: space-between; /* Répartit l'espace disponible entre les éléments */
+    align-items: center; /* Centre les éléments verticalement */
+}
+
+.logo {
+    margin-right: 20px; /* Ajoute une marge à droite pour le logo */
+}
+
+.logo img {
+    height: 40px; /* Ajuste la hauteur du logo selon vos besoins */
+    width: auto; /* Ajuste la largeur du logo automatiquement en conservant les proportions */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    margin-left: 100px; /* Ajoute une marge entre les éléments de la liste */
+}
+
+li:last-child {
+    margin-right: 55px; /* Supprime la marge de droite pour le dernier élément */
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px; /* Taille de police */
+    padding: 8px 12px; /* Rembourrage */
+    border-radius: 5px; /* Bord arrondi */
+}
+
+li a:hover {
+    background-color: #66a02f;
+}
