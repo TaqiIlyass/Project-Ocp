@@ -1,37 +1,54 @@
+@charset "UTF-8";
 /* Employe.css */
+/* Pour les écrans de taille inférieure à 768px */
 @media screen and (max-width: 768px) {
   table {
     width: 100%;
     overflow-x: auto;
   }
 }
+/* Style général du tableau */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
 }
-table th, table td {
+
+/* Style des cellules du tableau */
+th, td {
   padding: 8px;
   border: 1px solid #ddd;
 }
-table th {
+
+/* Style des en-têtes de colonne */
+th {
   background-color: #f2f2f2;
   font-weight: bold;
 }
-table tr:nth-child(even) {
+
+/* Style des lignes paires du tableau */
+tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-table tr:hover {
+
+/* Style des lignes au survol de la souris */
+tr:hover {
   background-color: #ddd;
 }
 
-input[type=text] {
+/* Style des champs de saisie de type texte */
+input[type=text],
+input[type=date],
+input[type=number] {
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;
   box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
+/* Style du bouton */
 button {
   background-color: #4CAF50;
   color: white;
@@ -41,6 +58,7 @@ button {
   border-radius: 4px;
 }
 
+/* Style au survol du bouton */
 button:hover {
   background-color: #45a049;
 }

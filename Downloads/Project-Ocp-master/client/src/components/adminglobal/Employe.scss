@@ -1,59 +1,71 @@
 /* Employe.css */
 
+/* Pour les écrans de taille inférieure à 768px */
 @media screen and (max-width: 768px) {
-    table {
+  table {
       width: 100%;
       overflow-x: auto;
-    }
   }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  
-    th, td {
-      padding: 8px;
-      border: 1px solid #ddd;
-    }
-  
-    th {
-      background-color: #f2f2f2;
-      font-weight: bold;
-    }
-  
-    tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-  
-    tr:hover {
-      background-color: #ddd;
-    }
-  }
-  
-  input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-  }
-  
-  button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Styles pour rendre le formulaire 50% de la largeur de la page */
-  .form-container {
-    width: 50%;
-    margin: 0 auto;
-  }
-  
+}
+
+/* Style général du tableau */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Style des cellules du tableau */
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Style des en-têtes de colonne */
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Style des lignes paires du tableau */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style des lignes au survol de la souris */
+tr:hover {
+  background-color: #ddd;
+}
+
+/* Style des champs de saisie de type texte */
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style du bouton */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Style au survol du bouton */
+button:hover {
+  background-color: #45a049;
+}
+
+/* Styles pour rendre le formulaire 50% de la largeur de la page */
+.form-container {
+  width: 50%;
+  margin: 0 auto;
+}
